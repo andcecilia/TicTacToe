@@ -8,18 +8,17 @@
 import Foundation
 import UIKit
 
-public struct XOrOList: Codable, Equatable {
-    var itens: [XOrO]?
-}
+//public struct XOrO {
+//    var state: ItemState
+//    var positionX: UInt = 0
+//    var positionY: UInt = 0
+//}
+//
+//public struct XOrOList {
+//    var itens: [XOrO] = []
+//}
 
-public struct XOrO: Codable, Equatable {
-    var checked: Bool?
-}
 
-protocol TicTacToeCollectionViewCellDelegate: AnyObject {
-    func ticTacToeCollectionViewCell(_ cell: TicTacToeCollectionViewCell, didCheckWith indexPath: IndexPath)
-    func ticTacToeCollectionViewCell(_ cell: TicTacToeCollectionViewCell, didUncheckWith indexPath: IndexPath)
-}
 
 class TicTacToeCollectionViewCell: UICollectionViewCell, NibLoadableView, ReusableView, Identifiable {
 
@@ -27,24 +26,24 @@ class TicTacToeCollectionViewCell: UICollectionViewCell, NibLoadableView, Reusab
 
     var indexPath: IndexPath?
     var checked = false
-    weak var delegate: TicTacToeCollectionViewCellDelegate?
+//    weak var delegate: TicTacToeCollectionViewCellDelegate?
 
 //verificação se a checkmark estiver assinalada? talvez fazer um switch case se estiver com um valor
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    func configure(with item: XOrO, indexPath: IndexPath?) {
-        self.indexPath = indexPath
-        checkMarkButton.setTitle(item.checked ?? true ? "X" : "O", for: .normal)
-    }
+//    func configure(with item: XOrO, indexPath: IndexPath?) {
+//        self.indexPath = indexPath
+//        checkMarkButton.setTitle(item.checked ?? true ? "X" : "O", for: .normal)
+//    }
     
     @IBAction func didTapCheckMarkedButton() {
         guard let indexPath = self.indexPath else { return }
-        if checked {
-            delegate?.ticTacToeCollectionViewCell(self, didUncheckWith: indexPath)
-        } else {
-            delegate?.ticTacToeCollectionViewCell(self, didCheckWith: indexPath)
-        }
+//        if checked {
+//            delegate?.ticTacToeCollectionViewCell(self, didUncheckWith: indexPath)
+//        } else {
+//            delegate?.ticTacToeCollectionViewCell(self, didCheckWith: indexPath)
+//        }
     }
 }

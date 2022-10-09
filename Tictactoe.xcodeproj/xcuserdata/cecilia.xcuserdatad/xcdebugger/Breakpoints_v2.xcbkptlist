@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BBDC16BA-7244-44FD-ADDC-DBB86CAA15FA"
+            uuid = "F066EB25-5E09-43FF-9DDC-C3D1A8E15C54"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tictactoe/TicTacToeViewController.swift"
+            filePath = "Tictactoe/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "showAlertError()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
