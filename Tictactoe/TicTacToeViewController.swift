@@ -45,6 +45,7 @@ class TicTacToeViewController: UIViewController {
     var firstRow: [UIButton] = []
     var secondRow: [UIButton] = []
     var thirdRow: [UIButton] = []
+    var itemState: ItemState = .x
     
     public func configure(with matrixSize: Int?) {
             self.matrixSize = matrixSize
@@ -94,13 +95,7 @@ class TicTacToeViewController: UIViewController {
                 print("posição do X: \(positionX)")
                 print("posição do Y: \(positionY)")
             }
-            
-            
-            
-            
-            
-            print(items)
-            
+            //print(items)
         }
         // para cada item na lista é verificado se o tipo de estado é case .empty. se for, para cada botão é colocado "-" como título.
         for item in items {
@@ -126,13 +121,50 @@ class TicTacToeViewController: UIViewController {
         initMatrixItems(size: 3)
         }
     
+    //sender serve para identificar qual o index daquele botão que foi clicado. é porque a função didTapButtons está sendo ligada a todos os botões. E para saber qual botão que foi clicado ela recebe como parâmetro o button.
     @IBAction func didTapButtons(_ sender: UIButton) {
+        print(items)
+        for item in items {
+            switch item.state {
+            case .x:
+                //coisas
+                //case bolinha
+                isXturn = changePlayer(isXturn)
+//                .forEach({$0.setTitle("-", for: .normal)})
+            case .o:
+                //set para o
+                //mudar status para case x
+                isXturn = changePlayer(isXturn)
+            case .empty:
+                //set title x
+                //mudar status de empty para case bolinha
+                for i in 0...buttons.count {
+                    if sender.tag == i {
+                        print(i)
+                        buttons[i-1].setTitle(isXturn ? "X" : "O", for: .normal)
+                    }
+                }
+                isXturn = changePlayer(isXturn)
+//                setTitle("-", for: .normal)
+            }
+        }
+        
         print("tocou")
-        firstButton.setTitle(isXturn ? "X" : "O", for: .normal)
         print(sender.tag)
         //verificar com um for para ver com a posição qual state, dependendo da vez colocar x ou o.
     }
     
+    func changePlayer(_ isXturn: Bool) -> Bool {
+        if isXturn {
+            itemState = .o
+            print(isXturn)
+            return false
+        } else {
+            itemState = .x
+            print(isXturn)
+            return true
+        }
+    }
     
     }
 
