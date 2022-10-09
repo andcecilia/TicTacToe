@@ -10,7 +10,7 @@
 		2E3DC74328DA763800152153 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DC74228DA763700152153 /* TicTacToeViewController.swift */; };
 		2E8C670D28DA392800AEB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C670C28DA392800AEB37B /* AppDelegate.swift */; };
 		2E8C670F28DA392800AEB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C670E28DA392800AEB37B /* SceneDelegate.swift */; };
-		2E8C671128DA392800AEB37B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C671028DA392800AEB37B /* ViewController.swift */; };
+		2E8C671128DA392800AEB37B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C671028DA392800AEB37B /* MainViewController.swift */; };
 		2E8C671428DA392800AEB37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C671228DA392800AEB37B /* Main.storyboard */; };
 		2E8C671628DA392D00AEB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C671528DA392D00AEB37B /* Assets.xcassets */; };
 		2E8C671928DA392D00AEB37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C671728DA392D00AEB37B /* LaunchScreen.storyboard */; };
@@ -45,7 +45,7 @@
 		2E8C670928DA392800AEB37B /* Tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C670C28DA392800AEB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E8C670E28DA392800AEB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E8C671028DA392800AEB37B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E8C671028DA392800AEB37B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E8C671328DA392800AEB37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E8C671528DA392D00AEB37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8C671828DA392D00AEB37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				2EFEDCC028DB723E0016F8EA /* Utils */,
 				2E8C670C28DA392800AEB37B /* AppDelegate.swift */,
 				2E8C670E28DA392800AEB37B /* SceneDelegate.swift */,
-				2E8C671028DA392800AEB37B /* ViewController.swift */,
+				2E8C671028DA392800AEB37B /* MainViewController.swift */,
 				2E8C671228DA392800AEB37B /* Main.storyboard */,
 				2E8C671528DA392D00AEB37B /* Assets.xcassets */,
 				2E8C671728DA392D00AEB37B /* LaunchScreen.storyboard */,
@@ -284,7 +284,7 @@
 			files = (
 				2EFEDCC228DB725A0016F8EA /* NibReusable.swift in Sources */,
 				2EFEDCBF28DB566F0016F8EA /* TicTacToeCollectionViewCell.swift in Sources */,
-				2E8C671128DA392800AEB37B /* ViewController.swift in Sources */,
+				2E8C671128DA392800AEB37B /* MainViewController.swift in Sources */,
 				2E8C670D28DA392800AEB37B /* AppDelegate.swift in Sources */,
 				2E8C670F28DA392800AEB37B /* SceneDelegate.swift in Sources */,
 				2E3DC74328DA763800152153 /* TicTacToeViewController.swift in Sources */,
